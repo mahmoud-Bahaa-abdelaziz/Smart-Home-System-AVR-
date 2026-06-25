@@ -1,85 +1,49 @@
-An embedded smart home automation system developed using an AVR microcontroller and Embedded C. The project integrates security, automation, and environmental monitoring through peripherals such as a keypad, EEPROM, servo motor, and temperature sensor.
+# 🏠 Smart Home Automation System
+An embedded smart home automation system developed using an **AVR microcontroller** and **Embedded C**.
 
-📌 Features
-🔐 Password-Based Authentication
-Secure access using a 4x4 keypad.
-Password verification before granting access.
+## 📌 Features
+### 🔐 Password-Based Authentication
+- Secure access using a 4×4 keypad
+- Password verification before granting access
 
+### 💾 EEPROM Storage
+- Stores user passwords persistently
+- Retains data even after power loss
 
+### 🚪 Servo Motor Control
+- Simulates an automated smart door lock
+- Unlocks and locks the door based on authentication status
 
-💾 EEPROM Storage
-Stores user password persistently.
-Retains data even after power loss.
+### 🌡️ Temperature Monitoring
+- Reads ambient temperature using an LM35 sensor
+- Displays real-time temperature readings
 
+## 🛠️ Hardware Components
+- AVR Microcontroller (ATmega32 / ATmega16)
+- 4×4 Keypad
+- Servo Motor
+- LM35 Temperature Sensor
+- Internal EEPROM
+- 16×2 LCD Display
 
-🚪 Servo Motor Control
-Simulates an automated smart door lock.
-Opens and closes the door based on authentication status.
+## 💻 Software & Tools
+- Embedded C
+- AVR-GCC
+- Microchip Studio
+- Proteus
 
+## 🚀 How It Works
+1. Enter the password using the keypad.
+2. The password is verified against the value stored in EEPROM.
+3. If correct, the servo motor unlocks the door.
+4. Otherwise, access is denied.
+5. The system continuously monitors and displays the temperature.
 
-🌡️ Temperature Monitoring
-Reads ambient temperature using a temperature sensor.
-Continuously monitors environmental conditions.
+## 👨‍💻 Author
+**Mahmoud Bahaa**
+Computer Engineering Student | Embedded Systems | AI & Machine Learning
 
-
-🤖 Home Automation
-Integrates security and monitoring into a single embedded system.
-Demonstrates real-time interaction between multiple hardware peripherals.
-
-
-🛠️ Hardware Components
-AVR Microcontroller (ATmega32 / ATmega16)
-4x4 Keypad
-Servo Motor
-Temperature Sensor (LM35)
-EEPROM (Internal)
-LCD Display (16x2)
-Power Supply
-
-
-
-💻 Software & Tools
-Embedded C
-AVR-GCC
-Atmel Studio / Microchip Studio
-Proteus (for simulation, if applicable)
-📂 Project Structure
-Smart-Home-System/
-│── main.c
-│── keypad.c
-│── keypad.h
-│── lcd.c
-│── lcd.h
-│── servo.c
-│── servo.h
-│── temperature.c
-│── temperature.h
-│── eeprom.c
-│── eeprom.h
-│── utils/
-└── README.md
-🚀 How It Works
-The system prompts the user to enter a password using the keypad.
-The entered password is compared with the value stored in EEPROM.
-If authentication succeeds:
-The servo motor unlocks the door.
-System access is granted.
-If authentication fails:
-Access is denied.
-
-
-
-The temperature sensor continuously measures and displays the current temperature.
-🎯 Learning Outcomes
-AVR Microcontroller Programming
-Embedded C Development
-EEPROM Memory Management
-Servo Motor Control using PWM
-Keypad Interfacing
-LCD Interfacing
-Analog-to-Digital Conversion (ADC)
-Sensor Integration
-Real-Time Embedded System Design
+GitHub: https://github.com/mahmoud-Bahaa-abdel
 
 
 
