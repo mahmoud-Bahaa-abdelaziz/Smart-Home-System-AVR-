@@ -4,18 +4,29 @@ An embedded smart home automation system developed using an AVR microcontroller 
 🔐 Password-Based Authentication
 Secure access using a 4x4 keypad.
 Password verification before granting access.
+
+
+
 💾 EEPROM Storage
 Stores user password persistently.
 Retains data even after power loss.
+
+
 🚪 Servo Motor Control
 Simulates an automated smart door lock.
 Opens and closes the door based on authentication status.
+
+
 🌡️ Temperature Monitoring
 Reads ambient temperature using a temperature sensor.
 Continuously monitors environmental conditions.
+
+
 🤖 Home Automation
 Integrates security and monitoring into a single embedded system.
 Demonstrates real-time interaction between multiple hardware peripherals.
+
+
 🛠️ Hardware Components
 AVR Microcontroller (ATmega32 / ATmega16)
 4x4 Keypad
@@ -24,6 +35,9 @@ Temperature Sensor (LM35)
 EEPROM (Internal)
 LCD Display (16x2)
 Power Supply
+
+
+
 💻 Software & Tools
 Embedded C
 AVR-GCC
@@ -52,6 +66,9 @@ The servo motor unlocks the door.
 System access is granted.
 If authentication fails:
 Access is denied.
+
+
+
 The temperature sensor continuously measures and displays the current temperature.
 🎯 Learning Outcomes
 AVR Microcontroller Programming
